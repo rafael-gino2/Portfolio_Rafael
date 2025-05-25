@@ -38,9 +38,6 @@ section {
   transition: all 0.9s ease-out;
   padding: 0 4%;
   scroll-margin-top: 100px;
-}
-
-section {
   margin-top: 10vh;
 }
 
