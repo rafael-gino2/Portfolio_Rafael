@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/rafa-icon-animated.svg" type="image/x-icon">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@5.3.0/css/simple-icons.min.css">
+
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <header class="p-4 fixed w-full top-0 z-50"> <!-- Tailwind header-->
+        <div class="container mx-auto px-4 flex justify-between items-center">
+
+            <!-- Logo -->
+            <a href="#">
+                <object data="./img/rafa-icon-animated.svg" type="image/svg+xml" width="45" height="45"></object>
+            </a>
+
+            <!-- Menu Sanduíche -->
+            <button id="menu-toggle" class="text-2xl lg:hidden">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Menu Desktop -->
+            <nav class="menu-desktop hidden lg:flex space-x-6">
+                <a href="#about" class="text-lg ">Sobre mim</a>
+                <a href="#tec" class="text-lg ">Conhecimentos</a>
+                <a href="#projects" class="text-lg ">Projetos</a>
+                <a href="#skills" class="text-lg ">Soft Skills</a>
+            </nav>
+
+            <!-- Botão Contato Desktop -->
+            <div class="btn-contact hidden lg:block">
+                <a href="#contact">
+                    <button style="background-color: #2A8C82;"
+                        class="px-6 py-2 text-white rounded-lg hover:opacity-100">Contato</button>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="fixed inset-0 z-40 hidden flex flex-col justify-center items-center">
+            <div class="absolute top-4 right-4">
+                <button id="close-menu" class="text-2xl text-white">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col items-center space-y-8 text-xl">
+                <a href="#about" class="animation-text py-2 mobile-menu-link">Sobre mim</a>
+                <a href="#tec" class="animation-text py-2 mobile-menu-link">Conhecimentos</a>
+                <a href="#projects" class="animation-text py-2 mobile-menu-link">Projetos</a>
+                <a href="#skills" class="animation-text py-2 mobile-menu-link">Soft Skills</a>
+                <a href="#contact" class="animation-text py-2 mobile-menu-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="start">
+            <div class="information">
+                <div class="text-content">
+                    <h1 class="animation-text">Do conceito ao código, criando soluções que inspiram.</h1>
+                    <p>
+                        Sou Rafael de Gino Barbosa, sou um desenvolvedor de sistemas full-stack e Cientista de
+                        Dados, com conhecimento
+                        em
+                        tecnologias como
+                        <strong>React.js</strong>,
+                        <strong>JavaScript</strong>,
+                        <strong>Python</strong>,
+                        <strong>Node.js</strong>,
+                        <strong>Firebase</strong>, <strong>MongoDB</strong> e
+                        <strong>MySQL</strong>. Além dessas tecnologias, utilizo diversas outras ferramentas e
+                        frameworks
+                        para criar soluções completas, como você verá ao longo do meu portfólio.
+                    </p>
+                </div>
+                <dotlottie-player src="https://lottie.host/8809d9c3-9b18-4b3d-bbaa-cacaa1de2da5/XJ0SRmajSo.lottie"
+                    background="transparent" speed="1"
+                    style="width: 100%; max-width: 500px; height: auto; aspect-ratio: 1/1;" loop autoplay
+                    class="pc-animation">
+                </dotlottie-player>
+            </div>
+            <div class="scroll-indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1E665C" stroke="currentColor"
+                    class="icon-arrow">
+                    <path d="M12 19l-7-7h14l-7 7z"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <article class="information flex items-start justify-between gap-4">
+                <div class="text-content max-w-3xl">
+                    <h2 class="animation-text">Sobre mim</h2>
+                    <p>
+                        Tenho paixão por resolver problemas,
+                        programar e transformar ideias em projetos eficientes, além de gostar muito de trabalhar em
+                        equipe. No tempo livre gosto de estudar,
+                        praticar esportes, assistir filmes e ouvir música. <br>
+                        <br>Abaixo, você pode fazer o download do meu currículo e saber mais sobre mim, e minhas formações.
+                    </p>
+                    <a href="./pdf/Curriculo_Rafael_Gino.pdf" download class="btn-download">
+                        Baixar Currículo
+                    </a>
+                </div>
+                <img class="profile-img" src="./img/profile.jpeg"
+                    alt="Foto de perfil de portfólio de Rafael de Gino Barbosa">
+            </article>
+        </section>
+
+
+        <section class="tec-skills" id="tec">
+            <article class="information flex-col gap-y-9">
+                <div class="text-content max-w-3xl">
+                    <h2 class="animation-text">Conhecimentos</h2>
+                    <p>
+                        Tenho conhecimento em diversas tecnologias do desenvolvimento web, tanto no front quanto no
+                        back-end. Quais você pode conferir abaixo.
+                    </p>
+
+                </div>
+
+                <div class="tech-cards-container">
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-html5"></i></div>
+                        <div class="tech-name">HTML5</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-name">CSS3</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-js-square"></i></div>
+                        <div class="tech-name">JavaScript</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-react"></i></div>
+                        <div class="tech-name">React.js</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-node-js"></i></div>
+                        <div class="tech-name">Node.js</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <svg class="custom-icon" viewBox="0 0 1024 1024" fill="#1E665C"> <!-- Cor oficial do MongoDB -->
+                            <path
+                                d="M648.86 449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93 12.65-1.41 17.53-13.37 30.29-18.52 14.48-113.54 94.21-121.27 256.37-7.21 151.24 109.25 241.36 125 252.85l1.79 1.27v-.11c.1.76 5 36 8.44 73.34H526a726.68 726.68 0 0 1 13-78.53l1-.65a204.48 204.48 0 0 0 20.11-16.45l.72-.65c33.48-30.93 93.67-102.47 93.08-216.53a347.07 347.07 0 0 0-5.05-56.76zM512.35 659.12s0-212.12 7-212.08c5.46 0 12.53 273.61 12.53 273.61-9.72-1.17-19.53-45.03-19.53-61.53z" />
+                        </svg>
+                        <div class="tech-name">MongoDB</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-database"></i></div>
+                        <div class="tech-name">MySQL</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-fire"></i></div>
+                        <div class="tech-name">Firebase</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-figma"></i></div>
+                        <div class="tech-name">Figma</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-bootstrap"></i></div>
+                        <div class="tech-name">Bootstrap</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <svg class="custom-icon" viewBox="0 0 54 33" fill="#1E665C">
+                            <path
+                                d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" />
+                        </svg>
+                        <div class="tech-name">Tailwind</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="tech-name">Git</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fab fa-github"></i></div>
+                        <div class="tech-name">GitHub</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div class="tech-name">Power BI</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="projects" id="projects">
+            <article class="information">
+                <div class="text-content max-w-3xl">
+                    <h2 class="animation-text">Projetos</h2>
+                    <p>Aqui estão alguns dos projetos que desenvolvi ao longo da minha jornada como desenvolvedor.
+                        Alguns foram feitos individualmente, outros em grupo — como meu TCC — onde pude aplicar na
+                        prática meus conhecimentos em programação, trabalho em equipe e resolução de problemas. Cada
+                        projeto representa um passo importante na minha evolução profissional.
+                    </p>
+                </div>
+            </article>
+
+            <div class="personal-projects">
+                <div class="line-projects">
+                    <h3 class="animation-text">Projetos Pessoais</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Projeto Travis Scott - Versão Atualizada -->
+                    <div class="project-card">
+                        <div class="project-icon-container">
+                            <div class="project-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h3 class="project-title">Projeto Travis Scott</h3>
+                            <p class="project-description">
+                                Site temático do álbum Utopia com design interativo e animações CSS.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">+1</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn" onclick="openModal('modal-travis')">Ver Projeto</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto GeoTrack - Versão Atualizada -->
+                    <div class="project-card">
+                        <div class="project-icon-container">
+                            <div class="project-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="project-title">Projeto GeoTrack</h3>
+                            <p class="project-description">
+                                Site para empresa fictícia de energia geotérmica com layout responsivo.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Tailwind Css</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn" onclick="openModal('modal-geotrack')">Ver Projeto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="groups-projects">
+                <div class="line-projects">
+                    <h3 class="animation-text">Projetos em grupo</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Projeto Gestock - Versão Atualizada -->
+                    <div class="project-card">
+                        <div class="project-icon-container">
+                            <div class="project-icon">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <h3 class="project-title">Projeto Gestock</h3>
+                            <p class="project-description">
+                                Sistema de gestão de estoque desenvolvido como trabalho em equipe.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">+5</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn" onclick="openModal('modal-gesTock')">Ver Projeto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-overlay" id="modal-travis">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal-travis')">&times;</span>
+                <h2 class="animation-text">Projeto Travis Scott</h2>
+                <p class="modal-description">Meu primeiro projeto pessoal, inspirado em uma das minhas maiores paixões:
+                    a música. Desenvolvi um site imersivo baseado no álbum "Utopia", do artista Travis Scott, com foco
+                    em uma estética minimalista que reflete a identidade visual do álbum. Esse projeto foi uma
+                    oportunidade de aprimorar minhas habilidades em desenvolvimento web, design responsivo e atenção aos
+                    detalhes visuais e de usabilidade.
+                    <br>
+                    <strong>Feito em:</strong> 2023 <br>
+                    <strong>Tecnologias usadas:</strong> Html, Css, JavaScript e Bootstrap
+                </p>
+                <a href="https://rafaeldegino.github.io/Utopia-World/" target="_blank" class="project-btn-acess">
+                    Acessar Projeto
+                </a>
+                <a href="https://github.com/rafael-gino2/Projeto-TravisScott" target="_blank" class="project-btn-acess">
+                    Repositório
+                </a>
+
+                <div class="slider-container">
+                    <div class="slider" id="slider-travis">
+                        <img src="./img/travis.png"
+                            alt="Slide 1 do modal do projeto Travis Scott feito por Rafael de Gino Barbosa" />
+                        <img src="./img/travis2.png"
+                            alt="Slide 2 do modal do projeto Travis Scott feito por Rafael de Gino Barbosa " />
+                    </div>
+                    <button class="slider-btn prev" onclick="prevSlide('slider-travis')">&#10094;</button>
+                    <button class="slider-btn next" onclick="nextSlide('slider-travis')">&#10095;</button>
+                    <div class="slider-shadow-left"></div>
+                    <div class="slider-shadow-right"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-overlay" id="modal-geotrack">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal-geotrack')">&times;</span>
+                <h2 class="animation-text">Projeto GeoTrack</h2>
+                <p class="modal-description">
+                    Meu segundo projeto pessoal, desenvolvido como parte de uma apresentação escolar no ensino médio
+                    sobre energia geotérmica. Apesar de ser um projeto de pequeno porte, ele teve um papel importante no
+                    meu crescimento como desenvolvedor. Foi nele que experimentei pela primeira vez o uso da biblioteca
+                    Tailwind CSS, o que me permitiu melhorar a organização do código e otimizar o design responsivo.
+                    <br>
+                    <strong>Feito em:</strong> 2024 <br>
+                    <strong>Tecnologias usadas:</strong> HTML, CSS e Tailwind CSS
+                </p>
+
+                <a href="https://rafaeldegino.github.io/GeoTrack/" target="_blank" class="project-btn-acess">
+                    Acessar Projeto
+                </a>
+                <a href="https://github.com/rafael-gino2/Projeto-GeoTrack" target="_blank" class="project-btn-acess">
+                    Repositório
+                </a>
+
+                <div class="slider-container">
+                    <div class="slider" id="slider-geotrack">
+                        <img src="./img/geotrack.png"
+                            alt="Slide 1 do modal do projeto geotrack feito por Rafael de Gino Barbosa" />
+                        <img src="./img/tela2.PNG"
+                            alt="Slide 2 do modal do projeto geotrack feito por Rafael de Gino Barbosa" />
+                        <img src="./img/tela3.PNG"
+                            alt="Slide 3 do modal do projeto geotrack feito por Rafael de Gino Barbosa" />
+                    </div>
+                    <button class="slider-btn prev" onclick="prevSlide('slider-geotrack')">&#10094;</button>
+                    <button class="slider-btn next" onclick="nextSlide('slider-geotrack')">&#10095;</button>
+                    <div class="slider-shadow-left"></div>
+                    <div class="slider-shadow-right"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-overlay" id="modal-gesTock">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal-gesTock')">&times;</span>
+                <h2 class="animation-text">Projeto GesTock</h2>
+                <p class="modal-description">
+                    Gestock é uma plataforma ERP acadêmica desenvolvida como parte do meu TCC no curso técnico
+                    de Desenvolvimento de Sistemas pelo Senai Suzana Dias. Foi nesse projeto que me consolidei
+                    como desenvolvedor full-stack, atuando principalmente no back-end, mas também aprimorando minhas
+                    habilidades no front-end.
+                    A proposta do Gestock é oferecer uma abordagem prática e interativa para o ensino de logística. Com
+                    ele, os alunos podem criar empresas fictícias e gerenciar cargos, salários, estoques e outros
+                    processos empresariais. Professores também têm acesso a ferramentas para supervisionar os
+                    alunos, gerenciar suas empresas e controlar o acesso a módulos específicos — como Administração,
+                    Recursos Humanos e Logística — conforme a evolução do conteúdo em sala.
+                    <br>
+                    <strong>Feito em:</strong> 2024 <br>
+                    <strong>Tecnologias usadas:</strong> React.js, CSS, Firebase, Node.js, Express.js, Socket.IO,
+                    Dot.env, Tailwind CSS
+                </p>
+
+                <a href="https://www.linkedin.com/posts/rafael-de-gino-barbosa-9191152b9_gestock-um-erp-acad%C3%AAmico-inovador-activity-7283620353963130881-lbYD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAExek-UBTXyQHgxsUuhbZd19SWAsnMu0HLs" target="_blank" class="project-btn-acess">
+                    Saiba mais
+                </a>
+
+
+                <div class="slider-container">
+                    <div class="slider" id="slider-gesTock">
+                        <img src="./img/dashboard.png"
+                            alt="Slide 1 do modal do projeto geotrack feito por Rafael de Gino Barbosa" />
+                        <img src="./img/calendario.png"
+                            alt="Slide 2 do modal do projeto geotrack feito por Rafael de Gino Barbosa" />
+                        <img src="./img/visualizar.png"
+                            alt="Slide 3 do modal do projeto geotrack feito por Rafael de Gino Barbosa" />
+                        <img src="./img/modulo.PNG"
+                            alt="Slide 3 do modal do projeto geotrack feito por Rafael de Gino Barbosa" />
+                        <img src="./img/aluno.PNG"
+                            alt="Slide 3 do modal do projeto geotrack feito por Rafael de Gino Barbosa" />
+                    </div>
+                    <button class="slider-btn prev" onclick="prevSlide('slider-gesTock')">&#10094;</button>
+                    <button class="slider-btn next" onclick="nextSlide('slider-gesTock')">&#10095;</button>
+                    <div class="slider-shadow-left"></div>
+                    <div class="slider-shadow-right"></div>
+
+                </div>
+            </div>
+        </div>
+        <section class="soft-skills" id="skills">
+            <article class="information ">
+                <div class="text-content max-w-3xl">
+                    <h2 class="animation-text">Soft Skills</h2>
+                    <p>
+                        As soft skills, ou habilidades interpessoais, são qualidades que envolvem comportamento,
+                        comunicação e forma
+                        de trabalhar em equipe. Abaixo, compartilho algumas das minhas principais soft skills —
+                        competências que
+                        considero essenciais para colaborar, aprender e evoluir constantemente dentro de qualquer
+                        projeto ou
+                        ambiente de trabalho.
+                    </p>
+                </div>
+            </article>
+
+            <div class="skills-cards">
+                <div class="skill-card">
+                    <i class="fas fa-users animation-text"></i>
+                    <h3 class="animation-text">Trabalho em equipe</h3>
+                    <p class="animation-text">Gosto de colaborar com outras pessoas e somar em projetos em conjunto.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-lightbulb animation-text"></i>
+                    <h3 class="animation-text">Criatividade</h3>
+                    <p class="animation-text">Sempre em busca de soluções inovadoras e abordagens diferentes.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-comments animation-text"></i>
+                    <h3 class="animation-text">Comunicação</h3>
+                    <p class="animation-text">Boa habilidade para expressar ideias e ouvir sugestões da equipe.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-clock animation-text"></i>
+                    <h3 class="animation-text">Gestão do tempo</h3>
+                    <p class="animation-text">Organização e foco para entregar as tarefas dentro dos prazos.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain animation-text"></i>
+                    <h3 class="animation-text">Pensamento crítico</h3>
+                    <p class="animation-text">Capacidade de analisar problemas e encontrar as melhores soluções.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bolt animation-text"></i>
+                    <h3 class="animation-text">Proatividade</h3>
+                    <p class="animation-text">Tomo iniciativa para resolver problemas e melhorar os processos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <h2 class="contact-title animation-text">Vamos conversar?</h2>
+                <p class="contact-subtitle">Estou disponível para oportunidades, colaborações ou apenas um bate-papo
+                    sobre tecnologia.</p>
+
+                <div class="contact-grid">
+                    <!-- Linha Superior -->
+                    <div class="contact-row">
+                        <!-- WhatsApp -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3 class="contact-method">WhatsApp</h3>
+                            <p class="contact-info">Contato direto e rápido</p>
+                            <a href="https://api.whatsapp.com/send?phone=5511974337253" class="contact-btn">
+                                <i class="fas fa-comment-dots"></i> Mensagem
+                            </a>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="contact-method">Email</h3>
+                            <p class="contact-info">Para propostas formais</p>
+                            <a href="mailto:rafaelgino2727@gmail.com" class="contact-btn">
+                                <i class="fas fa-paper-plane"></i> Enviar
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Linha Inferior -->
+                    <div class="contact-row">
+                        <!-- GitHub -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3 class="contact-method">GitHub</h3>
+                            <p class="contact-info">Meus projetos e códigos</p>
+                            <a href="https://github.com/rafael-gino2" class="contact-btn">
+                                <i class="fas fa-code-branch"></i> Ver repositórios
+                            </a>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <h3 class="contact-method">LinkedIn</h3>
+                            <p class="contact-info">Meu perfil profissional</p>
+                            <a href="https://www.linkedin.com/in/rafael-de-gino-barbosa-9191152b9/" class="contact-btn">
+                                <i class="fas fa-user-tie"></i> Conectar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <canvas id="grid-background"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
