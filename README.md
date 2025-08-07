@@ -4,7 +4,7 @@ Este repositório contém meu portfólio profissional desenvolvido com HTML, CSS
 
 ## 🌐 Acesse o Portfólio
 
-Você pode visualizar meu portfólio online clicando [aqui](https://rafael-gino2.github.io/Portfolio_Rafael/) *(caso esteja hospedado no GitHub Pages)*.
+Você pode visualizar meu portfólio online clicando [aqui](https://portfolio-rafael-azure.vercel.app).
 
 ---
 
